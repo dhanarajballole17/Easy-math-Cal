@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="calculator">
+            <div class="creator">DHANARAJ SHIDHU BALLOLE</div>
+            <input type="text" class="display" id="screen" readonly>
+            <div class="button-row">
+                <input type="button" value="AC" id="ac" class="button" onclick="clearAll()">
+                <input type="button" value="DE" class="button" onclick="del()">
+                <input type="button" value="/" class="button" onclick="solve('/')">
+                <input type="button" value="*" class="button" onclick="solve('*')">
+            </div>
+            <div class="button-row">
+                <input type="button" value="7" class="button" onclick="solve('7')">
+                <input type="button" value="8" class="button" onclick="solve('8')">
+                <input type="button" value="9" class="button" onclick="solve('9')">
+                <input type="button" value="-" class="button" onclick="solve('-')">
+            </div>
+            <div class="button-row">
+                <input type="button" value="4" class="button" onclick="solve('4')">
+                <input type="button" value="5" class="button" onclick="solve('5')">
+                <input type="button" value="6" class="button" onclick="solve('6')">
+                <input type="button" value="+" class="button" onclick="solve('+')">
+            </div>
+            <div class="button-row">
+                <input type="button" value="1" class="button" onclick="solve('1')">
+                <input type="button" value="2" class="button" onclick="solve('2')">
+                <input type="button" value="3" class="button" onclick="solve('3')">
+                <input type="button" value="=" class="button equal-button" onclick="result()">
+            </div>
+            <div class="button-row">
+                <input type="button" value="0" class="button double-width" onclick="solve('0')">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
